@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* General Styles */
+/* General Styles (global)*/
 
 html {
   font-size: 16px;
@@ -139,6 +139,14 @@ address {
   margin: 50px 0;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
   /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
@@ -160,6 +168,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -230,9 +246,12 @@ footer .copyright {
   /* newsletter area */
 
   .newsletter {
+    background: url(../img/1-unsplash.jpg) center no-repeat #527158;
+    background-size: cover; 
     display: flex;
     justify-content: center;
-    flex-wrap: row wrap;
+    flex-flow: row wrap;
+    min-height: 500px;
   }
 
   .newsletter h1 {
@@ -241,6 +260,7 @@ footer .copyright {
     font-weight: 500; 
     line-height: 1.2; 
   }
+
 
   /* aside area */
 
@@ -282,9 +302,11 @@ footer .copyright {
   /* Features */
 
   .features {
+    background: url(../img/3unsplash1.jpg) center no-repeat #527158 ;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    flex-wrap: row wrap;
+    flex-flow: row wrap;
   }
 
   .features h2 {
@@ -327,6 +349,7 @@ footer .copyright {
     width: 53%;
     margin: 20px 0;
   }
+
 
   
 /* ==========================================================================
@@ -517,6 +540,10 @@ h3 {
 
   .header-divider {
     display: none;
+  }
+
+  .newsletter {
+    min-height: 600px;
   }
 
   .newsletter h1 {
